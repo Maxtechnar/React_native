@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, ScrollView } from 'react-native';
-import ProfileName from './components/ProfileName/ProfileName';
-import AboutMe from './components/AboutMe/AboutMe';
+import ProfileName from './components/screens/ProfileName/ProfileName';
+import AboutMe from './Screens/AboutMe/AboutMe';
 
 const App = () => {
   return (
