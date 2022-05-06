@@ -1,14 +1,16 @@
 import React from 'react';
-import { View } from 'react-native';
-import ProfileName from './components/profileName/profileName';
-import AboutMe from './components/aboutMe/aboutMe';
+import { View, ScrollView } from 'react-native';
+import ProfileName from './components/ProfileName/ProfileName';
+import AboutMe from './components/AboutMe/AboutMe';
 
 const App = () => {
   return (
-    <View>
-      <ProfileName />
-      <AboutMe />
-    </View>
+    <ScrollView>
+      <View>
+        <ProfileName />
+        <AboutMe />
+      </View>
+    </ScrollView>
   );
 };
 
