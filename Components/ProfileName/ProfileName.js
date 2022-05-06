@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import styles from './ProfileName.styles';
+import style from './ProfileName.styles';
 
 const ProfileName = () => {
     return (
-        <View style={styles.body}>
-            <Text style={styles.titleText}>Максим Чернявский</Text>
+        <View style={style.body}>
+            <Text style={style.titleText}>Максим Чернявский</Text>
         </View>
     );
 };
