@@ -1,14 +1,26 @@
-import { StyleSheet } from 'react-native';
 import colors from '../../res/colors';
 
-const styles = StyleSheet.create({
+const styles = {
     titleText: {
+        fontSize: 30,
+        fontWeight: "bold",
+        color: colors.white,
+        textAlign: 'center',
+        fontFamily: "Cochin",
+        marginTop: 20,
+    },
+    title: {
         fontSize: 30,
         fontWeight: "bold",
         color: colors.black,
         textAlign: 'center',
         fontFamily: "Cochin",
         marginTop: 30,
+    },
+    profileName: {
+        backgroundColor: colors.purple,
+        height: 80,
+
     },
     mainText: {
         fontSize: 20,
@@ -33,6 +45,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         position: 'relative',
     }
-});
+};
 
 export default styles;
