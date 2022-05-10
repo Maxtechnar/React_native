@@ -1,6 +1,7 @@
 import colors from '../../res/colors';
+import { StyleSheet } from "react-native"
 
-const styles = {
+export default StyleSheet.create({
     titleText: {
         fontSize: 30,
         fontWeight: "bold",
@@ -45,6 +46,6 @@ const styles = {
         flexDirection: 'row',
         position: 'relative',
     }
-};
+});
 
-export default styles;
+

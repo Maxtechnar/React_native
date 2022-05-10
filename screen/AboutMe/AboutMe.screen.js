@@ -5,9 +5,11 @@ import ARRAY_OF_LINK from './AboutMe.constants';
 
 
 
+
 const AboutMe = () => {
     const card = ARRAY_OF_LINK.map(link => <Image
         style={styles.skillsLogo}
+        key={link.id}
         source={{
             uri: link.icon
         }}
