@@ -3,9 +3,6 @@ import { View, Text, Image } from 'react-native';
 import styles from './AboutMe.styles';
 import ARRAY_OF_LINK from './AboutMe.constants';
 
-
-
-
 const AboutMe = () => {
     const card = ARRAY_OF_LINK.map(link => <Image
         style={styles.skillsLogo}
