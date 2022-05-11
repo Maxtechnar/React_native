@@ -5,7 +5,7 @@ export default StyleSheet.create({
     titleText: {
         fontSize: 30,
         fontWeight: "bold",
-        color: colors.white,
+        color: colors.black,
         textAlign: 'center',
         fontFamily: "Cochin",
         marginTop: 20,
@@ -47,5 +47,3 @@ export default StyleSheet.create({
         position: 'relative',
     }
 });
-
-
