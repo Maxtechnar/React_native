@@ -16,7 +16,7 @@ export default StyleSheet.create({
         color: colors.black,
         textAlign: 'center',
         fontFamily: "Cochin",
-        marginTop: 30,
+        marginTop: 20,
     },
     profileName: {
         backgroundColor: colors.purple,
@@ -28,19 +28,17 @@ export default StyleSheet.create({
         color: "black",
         marginTop: 20,
         textAlign: "justify",
-        width: 390,
-        marginLeft: 10
+        width: 370,
+        marginLeft: 10,
+        fontWeight: "bold"
     },
     skillsLogo: {
         width: 60,
         height: 60,
-        marginLeft: 33,
+        marginLeft: 30,
     },
-    skills: {
 
-    },
     blockItem: {
-
         marginTop: 20,
         flex: 1,
         flexDirection: 'row',

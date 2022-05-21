@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Menu from '../screen/Menu/Menu.screen';
-import AboutMe from '../screen/AboutMe/AboutMe.screen';
+import { AboutMe, Menu } from '../screen';
 import colors from '../res/colors';
+import { MENU, PROFILE } from '../config/constants';
+
 
 
 const Stack = createNativeStackNavigator();
@@ -11,7 +12,7 @@ const Stack = createNativeStackNavigator();
 const Nav = () => {
     return (
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator initialRouteName={MENU}>
                 <Stack.Screen options={{
                     headerStyle: {
                         backgroundColor: colors.purple,
@@ -20,7 +21,7 @@ const Nav = () => {
                     headerTitleStyle: {
                         fontWeight: 'bold',
                     }
-                }} name="Menu" component={Menu} />
+                }} name={MENU} component={Menu} />
                 <Stack.Screen options={{
                     headerTintColor: colors.white,
                     headerTitleStyle: {
@@ -29,7 +30,7 @@ const Nav = () => {
                     headerStyle: {
                         backgroundColor: colors.purple,
                     },
-                }} name="Profile" component={AboutMe} />
+                }} name={PROFILE} component={AboutMe} />
             </Stack.Navigator>
         </NavigationContainer>
     );

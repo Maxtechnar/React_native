@@ -1,24 +1,15 @@
 import React from 'react';
-import { View, Text, TouchableHighlight } from 'react-native';
-import styles from "./Menu.style"
+import { Button } from '../../components';
+import buttonName from '../../res/buttonName';
 import colors from '../../res/colors';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import onPress from '../../res/onPress';
+import Styles from '../../res/styles';
 
 
 
-const Menu = ({ navigation }) => {
+const Menu = () => {
     return (
-        <View >
-            <TouchableHighlight
-                style={styles.body}
-                underlayColor={colors.gray}
-                onPress={() => navigation.navigate('Profile')}>
-                <Text style={styles.button}>
-                    Profile
-                </Text>
-            </TouchableHighlight>
-            <Icon style={styles.arrow} name="chevron-right" />
-        </View>
+        <Button style={Styles} color={colors.purple} onPress={onPress.profile.route} name={buttonName.profile.text} />
     )
 }
 
