@@ -4,12 +4,6 @@ import { View, Text } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Button from "../Button/Button";
 
-
-
-
-
-
-
 const TransitionOnProfile = ({ onPress, name }) => {
     return (
         <Button onPress={onPress}>
@@ -22,9 +16,6 @@ const TransitionOnProfile = ({ onPress, name }) => {
                 </View>
             </View>
         </Button>
-
-
-
     )
 }
 

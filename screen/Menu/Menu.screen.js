@@ -2,8 +2,6 @@ import React from 'react';
 import { ScrollView } from 'react-native-gesture-handler';
 import { TransitionOnProfile } from '../../components';
 
-
-
 const Menu = ({ navigation }) => {
     return (
         <ScrollView>
