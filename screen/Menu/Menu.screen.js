@@ -1,15 +1,14 @@
 import React from 'react';
-import { Button } from '../../components';
-import buttonName from '../../res/buttonName';
-import colors from '../../res/colors';
-import onPress from '../../res/onPress';
-import Styles from '../../res/styles';
+import { ScrollView } from 'react-native-gesture-handler';
+import { TransitionOnProfile } from '../../components';
 
 
 
-const Menu = () => {
+const Menu = ({ navigation }) => {
     return (
-        <Button style={Styles} color={colors.purple} onPress={onPress.profile.route} name={buttonName.profile.text} />
+        <ScrollView>
+            <TransitionOnProfile onPress={() => navigation.navigate("Profile")} name={"Profile"} />
+        </ScrollView>
     )
 }
 

@@ -5,10 +5,7 @@ import { AboutMe, Menu } from '../screen';
 import colors from '../res/colors';
 import { MENU, PROFILE } from '../config/constants';
 
-
-
 const Stack = createNativeStackNavigator();
-
 const Nav = () => {
     return (
         <NavigationContainer>

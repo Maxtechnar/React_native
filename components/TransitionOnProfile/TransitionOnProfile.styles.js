@@ -1,6 +1,7 @@
-import colors from "./colors"
+import colors from "../../res/colors";
+import { StyleSheet } from "react-native";
 
-const Styles = {
+export default StyleSheet.create({
     container: {
         backgroundColor: colors.white,
         borderBottomColor: "gray",
@@ -23,6 +24,4 @@ const Styles = {
         bottom: 22,
         right: 10
     }
-}
-
-export default Styles;
+})
