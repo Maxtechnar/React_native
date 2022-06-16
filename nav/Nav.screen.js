@@ -8,13 +8,15 @@ import { MENU, PROFILE } from '../config/constants';
 const Stack = createNativeStackNavigator();
 const Nav = () => {
     return (
-        <NavigationContainer>
+        <NavigationContainer onStateChange={() => {
+
+        }}>
             <Stack.Navigator initialRouteName={MENU}>
                 <Stack.Screen options={{
                     headerStyle: {
-                        backgroundColor: colors.purple,
+                        backgroundColor: colors.white,
                     },
-                    headerTintColor: colors.white,
+                    headerTintColor: colors.black,
                     headerTitleStyle: {
                         fontWeight: 'bold',
                     }

@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text, Image, ScrollView } from 'react-native';
+import { View, Text, Image, ScrollView, StatusBar } from 'react-native';
 import styles from './AboutMe.styles';
 import ARRAY_OF_LINK from './AboutMe.constants';
+import colors from '../../res/colors';
 
 const AboutMe = () => {
     const card = ARRAY_OF_LINK.map(link => <Image
@@ -13,6 +14,7 @@ const AboutMe = () => {
     />)
     return (
         <ScrollView>
+            <StatusBar backgroundColor={colors.purple} barStyle="light-content" />
             <View style={styles.body}>
                 <Text style={styles.title}>About me</Text>
                 <Text style={styles.mainText}>Hello. I'm Max. I'm 25.I was born in Republic of Belarus.
